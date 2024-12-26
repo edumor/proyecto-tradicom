@@ -8,7 +8,9 @@
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
         <link rel="apple-touch-icon" sizes="57x57" href="/img/iconos/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/img/iconos/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="/img/iconos/apple-icon-72x72.png">
@@ -28,7 +30,6 @@
         <meta name="theme-color" content="#ffffff">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <link rel="stylesheet" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -49,9 +50,6 @@
                                 <a class="nav-link" href="#nosotros">Quienes Somos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#presentacion">Presentación</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" href="#galeria">Clientes</a>
                             </li>
                             <li class="nav-item dropdown">
@@ -59,10 +57,11 @@
                                     Productos y Servicios
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item nav-link" href="#serv">Productos y Servicios</a></li>
-                                    <hr class="custom-hr"> 
-                                    <li><a class="dropdown-item nav-link" href="#psa">Pressure Swing Adsorption (PSA)</a></li>
-                                    <li><a class="dropdown-item nav-link" href="#tsa">Temperature Swing Adsorption (TSA)</a></li>
+                                    <li><a class="dropdown-item nav-link" href="#motores">Motores y Compresores</a></li>
+                                    <li><a class="dropdown-item nav-link" href="#separacion">Separación y filtración</a></li>
+                                    <li><a class="dropdown-item nav-link" href="#menbranas">Membranas y adsorción</a></li>
+                                    <li><a class="dropdown-item nav-link" href="#servicios">Servicios</a></li>
+                                    <li><a class="dropdown-item nav-link" href="#representacion">Representacion</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -81,33 +80,24 @@
                 <video id="video_inicial" src="img/Video Vaca Muerta.mp4" autoplay loop muted></video>
             </div>
         </section>
-         
-         <!--  Patalla de inicio -->
-         <section id="inicio" class="section_presentacion">
-            <div class="container-fluid">
-                <div class="row jf_section_1 d-flex align-items-stretch">
-                    <div class="col-md-6 d-flex flex-column">
-                        <br>
-                        <h2 class="margen_presentacion"><b>Industria del Petroleo y Gas</b></h2>
-                        <h2 class="margen-izquierdo izquierda">Bienvenidos a Tradicom S.A.</h2>
-                        <h3 class="margen-izquierdo izquierda">Soluciones Integrales para la Industria del Petróleo y Gas</h3>
-                        <hr class="jf_cont_sec_1_link hr">
-                        <p class="justificado flex-grow-1">En Tradicom S.A. nos especializamos en la comercialización de productos y servicios de alta calidad 
-                            diseñados para satisfacer las demandas más exigentes de la industria del petróleo y gas. Con mas de 30 años 
-                            de experiencia en el sector, ofrecemos soluciones innovadoras y confiables que optimizan los procesos de exploración, 
-                            producción, transporte y refinación de hidrocarburos.
-                        <br>Contamos con una amplia gama de productos especializados para las diversas fases de la cadena de valor del petróleo y gas, 
-                        siempre alineados con los más altos estándares de calidad y seguridad             
-                        </p>
-                    </div>
-                    <div class="col-md-6 text-center jf_cont_sec_2_link d-flex align-items-center justify-content-center">
-                        <img src="img/foto pagina de inicio.jpg" alt="" class="img-fluid custom-img">
+            
+        
+      <!--  Patalla de inicio -->
+      <section id="inicio" class="full-width-section section-margin px-sm-3">
+            <div class="common-class fondo_inicio">
+                <div class="row jf_section_1">
+                    <div class="col-12 px-0">
+                        <div class="half-page bg-cover">
+                            <!-- Imagen de fondo -->
+                        </div>
+                        <div class="half-page d-flex align-items-center justify-content-center white-bg">
+                            <p class="texto-p">Proveyendo equipos, repuestos y servicios de tecnología de avanzada 
+                                en el mercado del gas y petróleo, petroquímica y energía en latinoamérica por mas de 30 años.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-       
-       
+      </section>
 
         <!--  Desarrollo de la pagina quienes somos -->
 
@@ -115,14 +105,15 @@
             <div class="container_nosotros">
                 <div class="text-content">
                     <h1><b>Quienes somos</b></h1>
-                    <h2></h2>
                     <hr class="jf_cont_sec_1_link hr">
-                    <p class="justificado">En Tradicom SA, somos especialistas en la optimización de procesos por medio de la implementación
-                        de tecnología de primera línea para la industria energética. Desde nuestra fundación en 1994,
-                        hemos crecido para ofrecer productos y servicios en Argentina, Bolivia, Colombia, Uruguay, 
-                        y Estados Unidos, nos especializamos en la provisión de motores y compresores, sistemas de filtración 
-                        y separación y de los servicios asociados. Nuestra misión es mejorar la productividad de nuestros clientes 
-                        a través de la innovación constante y el soporte técnico especializado.
+                    <p class="justificado">En Tradicom SA, somos especialistas en la optimización de procesos por medio de la implementación 
+                        de tecnología de primera línea para la industria energética. Desde nuestra fundación en 1994, hemos crecido para ofrecer
+                         productos y servicios en Argentina, Bolivia, Colombia, Brasil, Ecuador, Uruguay y Estados Unidos, nos especializamos en 
+                         la provisión de motores y compresores, sistemas de filtración y separación y de los servicios asociados. Nuestra misión 
+                         es mejorar la productividad de nuestros clientes a través de la innovación constante y el soporte técnico especializado.
+                        Con más de 30 años de experiencia, colaboramos con líderes mundiales en tecnología para asegurar eficiencia, fiabilidad y 
+                        soluciones personalizadas que incrementan y mejoran la producción de nuestros clientes.
+                        
                     </p>
                 </div>
                 <div class="image-container_nosotros">
@@ -131,28 +122,7 @@
             </div>
         </section>
 
-        <!--  Desarrollo de la pagina Presentacion -->
-
-
-        <section id="presentacion" class="section_presentacion">
-            <div class="container-fluid">
-                <div class="row jf_section_1 d-flex align-items-stretch">
-                    <div class="col-md-6 d-flex flex-column">
-                        <br>
-                        <h2 class="margen_presentacion"><b>Presentacion</b></h2>
-                        <h3><b>Especialistas en optimización de Procesos</b></h3>
-                        <hr class="jf_cont_sec_1_link hr">
-                        <p class="justificado flex-grow-1">Tradicom SA es su aliado en la provisión de tecnología avanzada para optimizar procesos en las industrias de Oil & Gas, 
-                            refinación, energía y petroquímica. Con más de 30 años de experiencia, colaboramos con líderes mundiales en tecnología 
-                            para asegurar eficiencia, fiabilidad y soluciones personalizadas que mejoran la producción de nuestros clientes.             
-                        </p>
-                    </div>
-                    <div class="col-md-6 text-center jf_cont_sec_2_link d-flex align-items-center justify-content-center">
-                        <img src="img/oil-and-gas_detection-control_productcard.jfif" alt="" class="img-fluid custom-img">
-                    </div>
-                </div>
-            </div>
-        </section>
+        
 
         <!--  Desarrollo de la pagina de Clientes  -->
 
@@ -163,7 +133,7 @@
                     <div class="col-md-6 d-flex flex-column justify-content-center">
                         <br>
                         <h2 class="margen_presentacion"><b>Clientes</b></h2>
-                        <h3><b>Nuestros principales clientes</b></h3>
+                        <h3><i><b>Nuestros principales clientes</b></i></h3>
                         <hr class="jf_cont_sec_1_link hr">
                         <p class="justificado2 flex-grow-1">En el mundo empresarial actual, la oferta de productos y servicios de calidad es solo una parte del éxito. 
                             La verdadera diferenciación radica en la capacidad de construir relaciones sólidas y duraderas con nuestros clientes. 
@@ -263,27 +233,7 @@
             </div>
         </section>
 
-        <!-- Desarrollo de la pagina de PSA -->
-        <div id="psa" class="section_psa">
-            <div class="col-12 jf_section_1 video-container-psa bordered-section container-fluid">
-                <video class="video-container" src="img/psa.mp4" autoplay loop muted></video>
-                <div class="overlay-text-psa">
-                    <h1 class="title">Pressure Swing Adsorption (PSA)</h1>
-                    <h2 class="texto-adsorcion">Adsorción por cambio de presión</h2>
-                    <hr class="jf_cont_sec_1_link.hr">
-                    <p class="parrafo-psa">En Tradicom S.A., nos especializamos en esta tecnica, ampliamente utilizada para la separación 
-                        y purificación de gases. principalmente para la producción de gases puros como el hidrógeno, el oxígeno y el nitrógeno.
-                        Se basa en las diferentes propiedades de adsorción de los gases bajo condiciones de presión variables.</p>
-                    <h3 class="ventajas-title-psa">Ventajas:</h3>
-                    <ul class="subparrafo-psa">
-                        <li class="margen-izquierdo">Eficiencia: Los sistemas PSA pueden ser más eficientes en términos de energía en comparación con los métodos tradicionales de destilación.</li>
-                        <li class="margen-izquierdo">Diseño Compacto: A menudo requieren menos espacio y tienen costos de capital más bajos.</li>
-                        <li class="margen-izquierdo">Flexibilidad: La PSA se puede adaptar a varias mezclas de gases y es efectiva tanto para operaciones pequeñas como grandes.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        
+                
         <!-- Desarrollo de la pagina TSA -->
         <div id="tsa" class="section_psa">
             <div class="col-12 jf_section_1 video-container-psa bordered-section container-fluid">
@@ -305,6 +255,51 @@
             </div>
         </div>
 
+        <!-- Desarrollo de la pagina Representacion-->
+        <section id="representacion" class="full-width-section section-margin px-sm-3">
+            <div class="common-class fondo_inicio">
+                <div class="row jf_section_1">
+                    <div class="col-12 px-0">
+                        <div class="half-page d-flex align-items-center justify-content-center white-bg">
+                            <p class="texto-representacion">Tenemos el orgullo de tener acuerdos de representación o distribución para la región con las siguientes compañías:</p>
+                        </div>
+                        <div class="bottom-half">
+                            <div class="logos grid-container">
+                                <div class="logo-item">
+                                    <a href="https://www.cooperservices.com/es/" target="-blank">
+                                        <img src="img/Logo_cooper.jpg" alt="Cooper Machinery Services">
+                                    </a>
+                                    <p>Cooper Machinery Services</p>
+                                </div>
+                                <div class="logo-item">
+                                    <a href="https://oilandgasseparations.pentair.com/" target="_blank">
+                                        <img src="img/Logo_pentair.jpg" alt="Pentair Filtration Solutions ">
+                                    </a>
+                                    <p>Pentair Filtration Solutions</p>
+                                </div>
+                                <div class="logo-item">
+                                    <a href="https://www.linde-engineering.com/products-and-services/process-plants/adsorption-and-membrane-plants" target="_blank">
+                                        <img src="img/Linde_plc_logo.png" alt="Linde GMBH – Adsorption and Membrane Plants">
+                                    </a>
+                                    <p>Linde GMBH – Adsorption and Membrane Plants</p>
+                                </div>
+                                <div class="logo-item">
+                                    <a href="https://genmar-latam.com/" target="_blank">
+                                        <img src="img/Logo_Gen_mar.jpg" alt="Genmar LATAM">
+                                    </a>
+                                    <p>Genmar LATAM </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+
+
+        
         <!-- Desarrollo de la pagina de Contacto -->
 
         <section>
@@ -320,7 +315,7 @@
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3904.977588366351!2d-58.37732511624193!3d-34.612210618039825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad4594170c7%3A0x2e3399b169424061!2sPer%C3%BA%20359%2C%20C1067AAG%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1729515859005!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
-                    <a href="https://wa.me/+54118583511" class="btn-wsp" target="_blank">
+                    <a href="https://wa.me/+5491157356497" class="btn-wsp" target="_blank">
                         <i class="fab fa-whatsapp"></i>
                     </a>
                     <div class="jf_section_1 col-md-6 contact-container">
