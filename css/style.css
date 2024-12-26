@@ -1,4 +1,11 @@
 /* Ajustes generales */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Merriweather:wght@300;400;700;900&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+}
+
+/* Estilos generales */  
 html, body {
     font-family: 'Lato', 'sans-serif';
     font-size: 15px;
@@ -81,18 +88,23 @@ h1 {
 /* Estilos del navbar */
 
 .transparent-navbar {
-    background-color: rgb(155, 149, 149);
+    background-color: rgb(242, 243, 242) !important; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(0, 0, 0, 0.8); /* Agregar borde suave */
+    border: .5px solid rgb(19, 57, 116); 
 }
 
 .navbar-nav .nav-link {
-    color: rgb(19, 57, 116); /* Cambiar el color */
+    color: rgb(19, 57, 116) !important; /* Color permanente */
     font-size: 1.4rem;
-    font-weight: bold;
     letter-spacing: 1px;
-    text-shadow: none; /* Quitar la sombra del texto */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
+
+.navbar-nav .nav-link:hover {
+    color: rgb(0, 0, 1) !important; /* Color al pasar el mouse */
+    background-color: rgba(19, 57, 116, 0.1); /* Fondo al pasar el mouse */
+}
+
 
 .custom-navbar {
     display: flex;
@@ -114,7 +126,7 @@ h1 {
 }
 
 .navbar-nav .nav-link:hover {
-    color: rgb(19, 57, 116); /* Cambiar el color al pasar el mouse */
+    color: rgb(19, 57, 116); /* Oscurecer el color al pasar el mouse */
 }
 
 .navbar-brand img {
@@ -249,26 +261,99 @@ h1 {
 
 /* Atributos de la seccion inicio */
 
-.section_presentacion {
-    height: 100vh; /* Ocupa el 100% del alto de la ventana */
+.half-page.bg-cover {
+    background-image: url('../img/banner3.jpg');
+    height: 60vh; /* Cambiado de 50vh a 60vh */
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.half-page.white-bg {
+    background-color: white;
+    height: 60vh;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.half-page {
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-cover {
+    background-size: cover;
+    background-position: center;
+}
+
+.justificado {
+    text-align: justify;
+}
+
+.margen-superior {
+    margin-top: 60px; 
+}
+
+.margen-izquierdo {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.izquierda {
+    text-align: left;
+}
+
+.blanco {
+    color: white;
 }
 
 .jf_section_1 {
-    height: 100%;
+    padding: 2%;
 }
 
-.col-md-6 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.half-page.d-flex.align-items-center.justify-content-center.white-bg {
+    padding-top: -1rem; /* Ajusta este valor según sea necesario */
 }
 
-.custom-img {
-    width: 100%;
-    height: auto; /* Mantiene la proporción de la imagen */
-    object-fit: contain; /* Asegura que la imagen mantenga su proporción dentro del contenedor */
+.texto-p {
+    font-size: 2rem; 
+    font-weight: bold;
+    width: calc(100% - 4rem); /* Ajusta el ancho para compensar los márgenes */
+    padding: 0 1rem;
+    margin-left: 2rem; /* Mayor margen izquierdo */
+    margin-right: 2rem; /* Mayor margen derecho */
+    margin-top: -8rem; /* Ajusta este valor según sea necesario para subir el texto */
+    color: rgb(19, 57, 116) !important;
+    text-align: justify;
 }
 
+@media (max-width: 767px) {
+    .half-page {
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    .texto-p {
+        font-size: 4vw; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+        margin-left: 1rem; /* Ajusta el margen izquierdo para pantallas más pequeñas */
+        margin-right: 1rem; /* Ajusta el margen derecho para pantallas más pequeñas */
+        width: calc(100% - 2rem); /* Ajusta el ancho para pantallas más pequeñas */
+        margin-top: -2rem; /* Ajusta este valor según sea necesario para pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 576px) {
+    .texto-p {
+        font-size: 3vw; /* Ajusta el tamaño del texto para pantallas muy pequeñas */
+        margin-left: 0.5rem; /* Ajusta el margen izquierdo para pantallas muy pequeñas */
+        margin-right: 0.5rem; /* Ajusta el margen derecho para pantallas muy pequeñas */
+        width: calc(100% - 1rem); /* Ajusta el ancho para pantallas muy pequeñas */
+        margin-top: -1rem; /* Ajusta este valor según sea necesario para pantallas muy pequeñas */
+    }
+}
 
 
 /* Atributos de la pagina nosotros */
@@ -517,6 +602,153 @@ h1 {
         text-align: center; /* Centra el título */
     }
 }
+
+
+
+/* Estilos de la pagina Representacion */
+#representacion {
+    background-color: white;
+    padding: 20px 0;
+    width: 100%;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#representacion .container {
+    max-width: 1200px; /* Ajusta el ancho máximo según sea necesario */
+    margin: 0 auto;
+}
+
+#representacion .logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap; /* Permite que los logos se ajusten en varias líneas si es necesario */
+    background-color: white; /* Fondo blanco para la fila de logos */
+}
+
+#representacion .logo-item {
+    text-align: center;
+    flex: 1 1 100px; /* Asegura que los logos tengan el mismo tamaño y se ajusten responsivamente */
+    margin: 10px;
+}
+
+#representacion .logo-item img {
+    width: 150px; /* Asegura que todos los logos tengan el mismo tamaño */
+    height: 150px; /* Asegura que todos los logos tengan el mismo tamaño */
+    object-fit: contain; /* Mantiene la proporción del logo dentro del contenedor */
+}
+
+#representacion .logo-item p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.bottom-half {
+    height: auto; /* Ajusta este valor según sea necesario */
+}
+
+.half-page {
+    height: auto; /* Ajusta este valor según sea necesario */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.top-half, .bottom-half {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.top-half {
+    background-color: #f0f0f0;
+    justify-content: center; /* Centraliza más el texto */
+}
+
+.bottom-half {
+    background-color: white; /* Fondo blanco para la fila de logos */
+    flex-direction: column;
+}
+
+.texto-representacion {
+    margin-top: 250px; /* Ajusta el valor según sea necesario */
+    font-size: 2rem; 
+    font-weight: bold;
+    width: calc(100% - 4rem); /* Ajusta el ancho para compensar los márgenes */
+    padding: 0 1rem;
+    margin-left: 2rem; /* Mayor margen izquierdo */
+    margin-right: 2rem; /* Mayor margen derecho */
+    color: rgb(19, 57, 116) !important;
+    text-align: center; /* Centraliza el texto */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; /* Ajusta el espacio entre los elementos según sea necesario */
+}
+
+.logo-item {
+    text-align: center;
+}
+
+.logo {
+    width: 150px; /* Ajusta el tamaño según tus necesidades */
+    height: auto; /* Mantiene la proporción del logo */
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto; /* Mantiene la proporción del logo */
+    flex-wrap: wrap; /* Permite que los logos se ajusten en varias líneas si es necesario */
+    background-color: white; /* Fondo blanco para la fila de logos */
+}
+
+.logo-item {
+    margin: 20px;
+    text-align: center;
+}
+
+.logo-item img {
+    width: 150px; /* Asegura que todos los logos tengan el mismo tamaño */
+    height: 150px; /* Asegura que todos los logos tengan el mismo tamaño */
+    object-fit: contain; /* Mantiene la proporción del logo dentro del contenedor */
+    cursor: pointer;
+}
+
+.logo-item p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Media queries para hacer la página responsiva */
+@media (max-width: 768px) {
+    .texto-representacion {
+        font-size: 1.2rem; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
+        margin-top: 250px; /* Ajusta el margen superior para pantallas más pequeñas */
+    }
+
+    .logo-item img {
+        width: 80px; /* Ajusta el tamaño de los logos para pantallas más pequeñas */
+        height: 80px; /* Ajusta el tamaño de los logos para pantallas más pequeñas */
+    }
+}
+
+
 
 /* Estilos para la pagina de PSA y TSA*/
 
